@@ -1,0 +1,38 @@
+TESTED:
+
+http://localhost:5000/auth/student/login -> for student signup
+http://localhost:5000/auth/student/signUp -> for student login
+http://localhost:5000/auth/company/signUp -> for company login
+http://localhost:5000/auth/company/login -> for company signup
+http://localhost:5000/getdata/companydetails -> for company details
+http://localhost:5000/coordinator/register -> to register coordinator
+http://localhost:5000/coordinator/delete -> to delete coordinator
+http://localhost:5000/auth/coordinator/login -> to login coordinator
+http://localhost:5000/auth/admin/login
+http://localhost:5000/auth/admin/signUp
+http://localhost:5000/auth/admin/presignup -> superadmin
+http://localhost:5000/savedata/student/company -> save student applied in which company
+http://localhost:5000/result/save -> save FinalResult and Result 
+http://localhost:5000/result/fetch -> fetch FinalResult and Result for particular company
+http://localhost:5000/getdata/slider -> getHighCtcStudents
+
+
+
+
+
+PENDING FOR TESTING:
+http://localhost:5000/getdata/company/applied-students
+
+
+TO BE MADE:
+
+/notification -> to be sent to admin/coordinator/students 
+/getdata/student/companies -> getCompaniesByRollNo (error)
+/getData/companyfulldetails -> for coordinator approval
+/update/companydetail -> to update details if coordinator has approved
+
+
+update isPlaced in student if placed
+
+my own result for each student
+

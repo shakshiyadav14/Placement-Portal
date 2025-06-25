@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+  <!-- Video Overlay -->
+  <div id="video-container">
+    <video id="intro-video" autoplay muted playsinline>
+      <source src="googleearth.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Main Content (Hidden Initially) -->
+  <div id="main-content" style="display: none;">
+    <div class="container">
+      <div class="header">
+        <img src="./logo.png" alt="Home Logo" class="logo">
+        <h1 class="title">Welcome to Placement Portal - NIT KKR</h1>
+      </div>
+      <p class="description">Select your login type below</p>
+
+      <div class="roles">
+        <!-- Student Card -->
+        <div class="card" onclick="location.href='http://localhost:5173/login';">
+          <img src="student.jpg" alt="Student">
+          <h3>Student</h3>
+          <p>Access job opportunities and manage applications.</p>
+        </div>
+
+        <!-- Company Card -->
+        <div class="card" onclick="location.href='http://localhost:5174/login';">
+          <img src="company.jpg" alt="Company">
+          <h3>Company</h3>
+          <p>Find talented students and streamline hiring.</p>
+        </div>
+
+        <!-- Coordinator Card -->
+        <div class="card" onclick="location.href='http://localhost:5175/login';">
+          <img src="coordinator1.png" alt="Coordinator">
+          <h3>Coordinator</h3>
+          <p>Manage placement activities effectively.</p>
+        </div>
+
+        <!-- Admin Card -->
+        <div class="card" onclick="location.href='http://localhost:5176/signup';">
+          <img src="admin.jpg" alt="Admin">
+          <h3>Admin</h3>
+          <p>Oversee and ensure smooth placement operations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.10.0/dist/gsap.min.js"></script>
+  <script src="landing.js"></script>
+</body>
+
+</html>
